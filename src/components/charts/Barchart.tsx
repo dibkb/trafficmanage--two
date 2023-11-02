@@ -159,7 +159,7 @@ const Barchart: FC = () => {
         <Tooltip />
         <Legend />
         <ReferenceLine y={0} stroke="#000" />
-        <Bar dataKey="E-chalan" fill="#292524" />
+        <Bar dataKey="E-chalan" fill="#0284c7" />
         <Bar dataKey="Violations" fill="#ef4444" />
       </BarChart>
     </ResponsiveContainer>
