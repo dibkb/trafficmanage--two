@@ -159,7 +159,7 @@ export default function DashboardLayout({
         </div>
       </aside>
       <main className="ml-64 mr-20 relative border border-transparent">
-        <nav className="fixed right-[80px]">
+        <nav className="fixed right-[80px] my-3">
           {session?.user && (
             <div className="flex justify-end items-center gap-3">
               {session?.user?.image && (
@@ -179,7 +179,7 @@ export default function DashboardLayout({
             </div>
           )}
         </nav>
-        <div className="mt-12">{children}</div>
+        <div className="mt-16">{children}</div>
       </main>
     </section>
   );

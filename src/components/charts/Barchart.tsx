@@ -12,59 +12,10 @@ import {
   Legend,
 } from "recharts";
 import dynamic from "next/dynamic";
-// import { calories } from "@/lib/zustand/slices/createActivitySlice";
 const BarChartDynamic = dynamic(
   () => import("recharts").then((recharts) => recharts.BarChart),
   { ssr: false }
 );
-const renderCustomizedLabel = (props: any) => {
-  const { x, y, width, value, label, gap } = props;
-  const radius = 10;
-  if (label)
-    return (
-      <g className="flex items-center gap-1">
-        <text
-          x={x + width / 2.5}
-          y={y - radius - 1}
-          //   fill={colors.darkgray}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontSize={14}
-          className="relative text-xs sm:text-sm"
-        >
-          {value}
-        </text>
-        <text
-          x={x + width / 2.5 + gap}
-          y={y - radius - 1}
-          //   fill={colors.darkgray}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontSize={14}
-          className="relative hidden md:block sm:text-sm !ml-1"
-        >
-          {label}
-        </text>
-      </g>
-    );
-  else {
-    return (
-      <g>
-        <text
-          x={x + width / 2}
-          y={y - radius - 1}
-          //   fill={colors.darkgray}
-          textAnchor="middle"
-          dominantBaseline="middle"
-          fontSize={14}
-          className="relative text-xs sm:text-sm"
-        >
-          {value + " "}
-        </text>
-      </g>
-    );
-  }
-};
 const Barchart: FC = () => {
   const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 500);
   useEffect(() => {
