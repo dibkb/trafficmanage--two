@@ -159,7 +159,7 @@ export default function DashboardLayout({
         </div>
       </aside>
       <main className="ml-64 mr-20 relative border border-transparent">
-        <nav className="fixed right-[80px] my-3">
+        <nav className="fixed right-[80px] my-3 bg-white z-50">
           {session?.user && (
             <div className="flex justify-end items-center gap-3">
               {session?.user?.image && (

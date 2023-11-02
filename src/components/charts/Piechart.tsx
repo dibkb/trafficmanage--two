@@ -6,8 +6,6 @@ const data = [
   { name: "No parking", value: 300 },
   { name: "No entry", value: 200 },
 ];
-const COLORS = ["#0088FE", "#00C49F", "#FFBB28", "#FF8042"];
-const RADIAN = Math.PI / 180;
 
 const renderActiveShape = (props: any) => {
   const RADIAN = Math.PI / 180;
@@ -33,10 +31,9 @@ const renderActiveShape = (props: any) => {
   const ex = mx + (cos >= 0 ? 1 : -1) * 22;
   const ey = my;
   const textAnchor = cos >= 0 ? "start" : "end";
-
   return (
     <g>
-      <text x={cx} y={cy} dy={8} textAnchor="middle" fill={fill}>
+      <text x={cx} y={cy} dy={8} textAnchor="middle">
         {payload.name}
       </text>
       <Sector
@@ -68,7 +65,7 @@ const renderActiveShape = (props: any) => {
         y={ey}
         textAnchor={textAnchor}
         fill="#333"
-      >{`PV ${value}`}</text>
+      >{`Total fine ₹ ${value}`}</text>
       <text
         x={ex + (cos >= 0 ? 1 : -1) * 12}
         y={ey}
@@ -85,7 +82,6 @@ const renderActiveShape = (props: any) => {
 export default class Piechart extends PureComponent {
   static demoUrl =
     "https://codesandbox.io/s/pie-chart-with-customized-active-shape-y93si";
-
   state = {
     activeIndex: 0,
   };
@@ -108,7 +104,7 @@ export default class Piechart extends PureComponent {
             cy="50%"
             innerRadius={100}
             outerRadius={150}
-            fill="#14b8a6"
+            fill="#ea580c"
             dataKey="value"
             onMouseEnter={this.onPieEnter}
           />
