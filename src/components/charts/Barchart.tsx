@@ -80,14 +80,14 @@ const Barchart: FC = () => {
     },
     {
       name: "Oct",
-      Violations: 4,
+      Violations: 0,
       "E-chalan": 0,
       amt: 2100,
     },
     {
       name: "Nov",
-      Violations: 0,
-      "E-chalan": 0,
+      Violations: 4,
+      "E-chalan": 2,
       amt: 2100,
     },
   ];
