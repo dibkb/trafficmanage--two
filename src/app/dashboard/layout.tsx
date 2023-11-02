@@ -22,6 +22,25 @@ export default function DashboardLayout({
         <p className="text-sm uppercase">Traffic Management System</p>
         {session?.user?.name}
       </nav> */}
+      \
+      {session?.user && (
+        <div className="flex justify-end items-center gap-3">
+          {session?.user?.image && (
+            <span className="p-[2px] bg-gradient-to-r from-[#5AC4D7] to-[#F1DE73] rounded-full cursor-pointer hover:bg-gradient-to-r hover:from-[#5AC4D7] hover:to-[#F3AFF2] hidden lg:block">
+              <Image
+                src={session?.user?.image}
+                className="rounded-full"
+                alt="profile image"
+                width={36}
+                height={36}
+              />
+            </span>
+          )}
+          {session?.user?.name && (
+            <p className="text-xs">{session.user.name}</p>
+          )}
+        </div>
+      )}
       {children}
     </section>
   );
