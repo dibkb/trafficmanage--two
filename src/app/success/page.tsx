@@ -2,13 +2,13 @@
 import { Dialog, Transition } from "@headlessui/react";
 import { useRouter } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
-
+import Image from "next/image";
 export default function MyModal({ price }: { price: number }) {
   let [isOpen, setIsOpen] = useState(true);
   const router = useRouter();
   function closeModal() {
     setIsOpen(false);
-    router.push("dashboard");
+    router.push("/");
   }
   return (
     <>
@@ -40,6 +40,17 @@ export default function MyModal({ price }: { price: number }) {
                 leaveTo="opacity-0 scale-95"
               >
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
+                  <span className="flex items-center gap-4 mb-4">
+                    <Image
+                      src="https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png"
+                      alt="iiitl logo"
+                      width={45}
+                      height={45}
+                    />
+                    <span className="self-center text-sm font-medium whitespace-nowrap">
+                      Traffic Management System
+                    </span>
+                  </span>
                   <Dialog.Title
                     as="h3"
                     className="text-lg font-medium leading-6 text-gray-900"
@@ -62,7 +73,7 @@ export default function MyModal({ price }: { price: number }) {
                       className="inline-flex justify-center rounded-md border border-transparent bg-blue-100 px-4 py-2 text-sm font-medium text-blue-900 hover:bg-blue-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
                       onClick={closeModal}
                     >
-                      Got it, thanks!
+                      Okay
                     </button>
                   </div>
                 </Dialog.Panel>
