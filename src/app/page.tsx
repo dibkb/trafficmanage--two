@@ -15,9 +15,10 @@ export default function Home() {
       <main className="flex items-center flex-col gap-4 w-full">
         <Name name={"Dibas Borborah"} roll={"MSA23019"} />
         <Name name={"Nishant"} roll={"MSA23010"} />
-        <Name name={"Nishant"} roll={"MSA23010"} />
-        <Name name={"Nishant"} roll={"MSA23010"} />
-        <Name name={"Nishant"} roll={"MSA23010"} />
+        <Name name={"Biplab Bhunia"} roll={"MSA23025"} />
+        <Name name={"E.Karthic"} roll={"MSA23006"} />
+        <Name name={"Ranjesh Kumar Verma"} roll={"MSA23022"} />
+        <Name name={"Priyanshu Dhaked"} roll={"MSA23012"} />
       </main>
       <section className="flex flex-col gap-4 w-60">
         <Link
