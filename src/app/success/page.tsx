@@ -1,17 +1,15 @@
 "use client";
 import { Dialog, Transition } from "@headlessui/react";
-import { Fragment, useState } from "react";
+import { useRouter } from "next/navigation";
+import { Fragment, useEffect, useState } from "react";
+
 export default function MyModal({ price }: { price: number }) {
   let [isOpen, setIsOpen] = useState(true);
-
+  const router = useRouter();
   function closeModal() {
     setIsOpen(false);
+    router.push("dashboard");
   }
-
-  function openModal() {
-    setIsOpen(true);
-  }
-
   return (
     <>
       <div className="fixed inset-0 flex items-center justify-center"></div>
