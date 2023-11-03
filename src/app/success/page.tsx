@@ -3,7 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import { useRouter } from "next/navigation";
 import { Fragment, useEffect, useState } from "react";
 import Image from "next/image";
-export default function MyModal({ price }: { price: number }) {
+export default function MyModal() {
   let [isOpen, setIsOpen] = useState(true);
   const router = useRouter();
   function closeModal() {
