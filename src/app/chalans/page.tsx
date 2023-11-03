@@ -1,4 +1,6 @@
-export default function Chalans() {
+"use client";
+import { StripeButton } from "@/components/stripe/payments";
+const Chalans = () => {
   return (
     <main>
       <div className="relative overflow-x-auto">
@@ -35,9 +37,7 @@ export default function Chalans() {
               <td className="px-6 py-4">Officer Ranjesh</td>
               <td className="px-6 py-4">₹500</td>
               <td className="px-6 py-4">
-                <p className="w-fit px-2 py-1 rounded-md cursor-pointer bg-blue-500 text-white hover:bg-blue-600">
-                  Pay now
-                </p>
+                <StripeButton price={500} />
               </td>
             </tr>
             <tr className="bg-white border-b">
@@ -51,9 +51,7 @@ export default function Chalans() {
               <td className="px-6 py-4">Officer Hritesh</td>
               <td className="px-6 py-4">₹900</td>
               <td className="px-6 py-4">
-                <p className="w-fit px-2 py-1 rounded-md cursor-pointer bg-blue-500 text-white hover:bg-blue-600">
-                  Pay now
-                </p>
+                <StripeButton price={900} />
               </td>
             </tr>
           </tbody>
@@ -61,4 +59,5 @@ export default function Chalans() {
       </div>
     </main>
   );
-}
+};
+export default Chalans;

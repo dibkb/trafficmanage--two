@@ -19,14 +19,14 @@ export default function Home() {
         <Name name={"Nishant"} roll={"MSA23010"} />
         <Name name={"Nishant"} roll={"MSA23010"} />
       </main>
-      <section className="flex gap-4">
+      <section className="flex flex-col gap-4 w-60">
         <Link
           href={"/login"}
-          className="border px-6 py-1 rounded-md hover:bg-stone-800 hover:text-white"
+          className="border flex justify-center px-4 py-2 rounded-md hover:bg-stone-800 hover:text-white"
         >
           Login
         </Link>
-        <button className="border px-6 py-1 rounded-md hover:bg-stone-800 hover:text-white">
+        <button className="border px-4 py-2 rounded-md hover:bg-stone-800 hover:text-white">
           Sign up
         </button>
       </section>

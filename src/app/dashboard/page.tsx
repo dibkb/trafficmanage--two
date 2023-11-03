@@ -4,6 +4,7 @@ import Piechart from "@/components/charts/Piechart";
 import { GiDeathSkull } from "react-icons/gi";
 import { AiFillWarning } from "react-icons/ai";
 import { TiTick } from "react-icons/ti";
+import Link from "next/link";
 export default function Dashboard() {
   return (
     <main className="">
@@ -58,7 +59,10 @@ export default function Dashboard() {
               </p>
             </span>
           </div>
-          <div className="bg-slate-200 px-4 py-2 rounded-md hover:bg-slate-400 group cursor-pointer">
+          <Link
+            href={"/chalans"}
+            className="bg-slate-200 px-4 py-2 rounded-md hover:bg-slate-400 group cursor-pointer"
+          >
             <span className="flex w-min rounded-full p-2 bg-slate-400">
               <AiFillWarning
                 className={
@@ -74,7 +78,7 @@ export default function Dashboard() {
                 2
               </p>
             </span>
-          </div>
+          </Link>
         </main>
       </div>
     </main>

@@ -9,12 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "14.0.1",
+    "@headlessui/react": "^1.7.17",
+    "@stripe/react-stripe-js": "^2.3.1",
+    "@stripe/stripe-js": "^2.1.11",
+    "next": "^14.0.1",
     "next-auth": "^4.24.4",
     "react": "^18",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
-    "recharts": "^2.9.2"
+    "react-stripe-checkout": "^2.6.3",
+    "recharts": "^2.9.2",
+    "stripe": "^14.3.0"
   },
   "devDependencies": {
     "@types/node": "^20",
