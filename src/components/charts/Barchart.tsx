@@ -79,6 +79,12 @@ const Barchart: FC = () => {
       amt: 2100,
     },
     {
+      name: "Aug",
+      Violations: 1,
+      "E-chalan": 0,
+      amt: 2100,
+    },
+    {
       name: "Oct",
       Violations: 0,
       "E-chalan": 0,
