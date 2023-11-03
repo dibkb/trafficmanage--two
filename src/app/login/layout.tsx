@@ -18,7 +18,7 @@ export default function DashboardLayout({
       {/* Include shared UI here e.g. a header or sidebar */}
       <nav className="py-4 flex items-center gap-4">
         <Image
-          src="https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png"
+          src="https://upload.wikimedia.org/wikipedia/en/2/20/Indian_Institute_of_Information_Technology%2C_Lucknow_Logo.png"
           alt="iiitl logo"
           width={60}
           height={60}

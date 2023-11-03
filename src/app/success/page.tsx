@@ -42,7 +42,7 @@ export default function MyModal() {
                 <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all">
                   <span className="flex items-center gap-4 mb-4">
                     <Image
-                      src="https://iiitl.ac.in/wp-content/uploads/2019/10/Final_Logo_IIITL.png"
+                      src="https://upload.wikimedia.org/wikipedia/en/2/20/Indian_Institute_of_Information_Technology%2C_Lucknow_Logo.png"
                       alt="iiitl logo"
                       width={45}
                       height={45}
